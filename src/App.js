@@ -3,10 +3,14 @@ import './App.css';
 import ExpenseItem from './components/ExpenseItem';
 
 const App = () => {
+  const date = new Date().toUTCString();
+  const insurance = "Car Insurance";
+  const price = "$300.62";
+  const LocationOfExpenditure = "Food";
   return (
     <div className="App">
       <header className="App-header">
-        <ExpenseItem/>
+        <ExpenseItem date = {date} insurance = {insurance} price = {price} LocationOfExpenditure = {LocationOfExpenditure}/>
         <h2 style={{color: "hotpink"}}>Roshan Shaik</h2>
         <img src={logo} className="App-logo" alt="logo" />
         <p>

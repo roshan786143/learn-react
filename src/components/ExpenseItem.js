@@ -1,12 +1,22 @@
-const ExpenseItem = () => {
+import "./ExpenseItem.css"
+
+const ExpenseItem = (props) => {
+    const {date, insurance, price, LocationOfExpenditure } = props
+    console.log(date);
+    console.log(insurance);
+    console.log(price);
+    console.log(LocationOfExpenditure );
   return (
     <>
-      <h2 style={{ color: "green" }}>Expense Items</h2>
-      <h3>Food Rs 10</h3>
-      <h3>Petrol Rs 100</h3>
-      <h3>Movies Rs 200</h3>
-      <h3>{Date()}</h3>
-    </>
+      <div className="expense-item">
+        <div>{date}</div>
+        <div className="expense-item__description">
+            <h2>{insurance}</h2>
+        </div>
+        <div className="expense-item__price">{price}</div>
+        <div className="LocationOfExpenditure">{LocationOfExpenditure}</div>
+      </div>
+      </>
   );
 };
 
