@@ -1,11 +1,10 @@
 import "./ExpenseItem.css"
 
-const ExpenseItem = (props) => {
-    const {date, insurance, price, LocationOfExpenditure } = props
-    console.log(date);
-    console.log(insurance);
-    console.log(price);
-    console.log(LocationOfExpenditure );
+const ExpenseItem = ({ expenseItem }) => {
+    console.log(expenseItem);
+    // const { expenseItems } = props;
+    const {date, insurance, price, LocationOfExpenditure } = expenseItem;
+
   return (
     <>
       <div className="expense-item">
